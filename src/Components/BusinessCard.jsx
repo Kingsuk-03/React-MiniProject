@@ -1,3 +1,5 @@
+import "./BusinessCard.css";
+
 export function BusinessCard({
   name,
   description,
@@ -7,19 +9,19 @@ export function BusinessCard({
 }) {
   return (
     <div>
-      <h3>{name}</h3>
-      <br />
+      <h2>{name}</h2>
+      <p />
       <p>{description}</p>
-      <h4>Interests</h4>
-      <br />
-      {interests}
-      <br />
-      <button onClick={() => window.open({ LinkedInURL }, "_blank")}>
+      <h3>Interests</h3>
+      <p />
+      {interests.map((i, index) => (
+        <p key={index}>{i}</p>
+      ))}
+      <p />
+      <button onClick={() => window.open(LinkedInURL, "_blank")}>
         LinkedIn
       </button>
-      <button onClick={() => window.open({ TwitterURL }, "_blank")}>
-        Twitter
-      </button>
+      <button onClick={() => window.open(TwitterURL, "_blank")}>Twitter</button>
     </div>
   );
 }

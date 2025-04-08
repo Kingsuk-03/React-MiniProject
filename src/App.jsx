@@ -16,15 +16,15 @@ function App() {
   ]);
 
   return (
-    <div>
+    <>
       <BusinessCard
-        name={person.name}
-        description={person.description}
-        interests={person.interests}
-        LinkedInURL={person.LinkedInURL}
-        TwitterURL={person.TwitterURL}
+        name={person[0].name}
+        description={person[0].description}
+        interests={person[0].interests}
+        LinkedInURL={person[0].LinkedInURL}
+        TwitterURL={person[0].TwitterURL}
       ></BusinessCard>
-    </div>
+    </>
   );
 }
 
