@@ -8,6 +8,8 @@ Which has a reusable Card Component which has the following
   - A short description
   - LinkedIn, Twitter and other Social Media Handle buttons
   - Interests Section
+<img src="example.png" alt="My Photo" width="400" />
+
 - You can assume that this is kind of an e-business card and feel free to put in your creativity
 
 # Additional & Slightly advanced:
