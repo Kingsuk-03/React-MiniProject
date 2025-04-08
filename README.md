@@ -1,12 +1,17 @@
-# React + Vite
+# Simple React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Which has a reusable Card Component which has the following
 
-Currently, two official plugins are available:
+- Ability to pass in props to the Component
+- The Card must show a person's
+  - Name
+  - A short description
+  - LinkedIn, Twitter and other Social Media Handle buttons
+  - Interests Section
+- You can assume that this is kind of an e-business card and feel free to put in your creativity
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Additional & Slightly advanced:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Create a page where you can add these kind of Cards by taking input from the user
+- Create a backend server where these cards get stored in a DB and can handle basic CRUD operations
+- Give the feature to perform CRUD operations from the frontend (Can be restricted to the admin only as well)
