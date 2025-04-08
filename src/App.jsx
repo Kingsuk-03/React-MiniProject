@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { BusinessCard } from "./Components/BusinessCard";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [person, setPerson] = useState([
+    {
+      name: "Kingsuk",
+      description: "Learning React",
+      interests: ["MERN", "Open Source", "FullStack Applications"],
+      LinkedInURL: "https://www.linkedin.com/in/kingsuk-bose-995615245/",
+      TwitterURL: "https://www.instagram.com/kingsuk.bose03",
+    },
+  ]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <BusinessCard
+        name={person.name}
+        description={person.description}
+        interests={person.interests}
+        LinkedInURL={person.LinkedInURL}
+        TwitterURL={person.TwitterURL}
+      ></BusinessCard>
+    </div>
+  );
 }
 
-export default App
+export default App;
