@@ -1,4 +1,4 @@
-# Simple React App
+# Simple React App ⚛
 
 Which has a reusable Card Component which has the following
 
