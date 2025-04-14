@@ -43,7 +43,7 @@ Below are a few example previews of the Card component:
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React, TailwindCSS / CSS Modules
+- **Frontend**: React, Inline JavaScript Styles
 - **Backend**: Node.js, Express
 - **Database**: MongoDB (via Mongoose)
 
